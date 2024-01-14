@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Results from './components/Results.jsx';
 
 function App() {
-    const [userInput, setUserInput] = useState({initialInvestment: 10000, annualInvestment: 1200, return: 6, duration: 10})
+    const [userInput, setUserInput] = useState({initialInvestment: 10000, annualInvestment: 1200, expectedReturn: 6, duration: 10})
 
     function handleChange(field, newValue) {
         setUserInput(prevState => ({...prevState, [field]: newValue}));
