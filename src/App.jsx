@@ -7,7 +7,7 @@ function App() {
     const [userInput, setUserInput] = useState({initialInvestment: 10000, annualInvestment: 1200, expectedReturn: 6, duration: 10})
 
     function handleChange(field, newValue) {
-        setUserInput(prevState => ({...prevState, [field]: newValue}));
+        setUserInput(prevState => ({...prevState, [field]: +newValue}));
     }
   
   return (
