@@ -12,6 +12,8 @@ body {
   background: radial-gradient(#142333, #0e1a26);
   color: #e1eeeb;
   min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
 }
 
 #header {
@@ -33,7 +35,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   max-width: 60rem;
-  background: #294c7378;
+  background: #1d344be8;
 }
 
 .input-group {
@@ -67,8 +69,6 @@ input:focus-visible {
 }
 
 #result {
-  max-width: 60rem;
-  margin: 2rem auto;
   padding: 1rem;
   table-layout: fixed;
   border-spacing: 1rem;
@@ -110,4 +110,30 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+.table-container {
+  max-height: 25rem;
+  overflow-y: auto;
+  max-width: 60rem;
+  margin: auto;
+  padding-right: 10px;
+}
+
+::-webkit-scrollbar {
+  height: 9px;
+  width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #142536;
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  width: 9px;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
 }
