@@ -214,3 +214,50 @@ input[type="number"] {
 ul {
   list-style: none;
 }
+
+@media only screen and (max-width: 900px) {
+  .app-name {
+    max-width: 6rem;
+  }
+
+  .logo-li-container {
+    margin-left: 0;
+  }
+
+  body {
+    overflow-y: auto;
+    padding: 0 0.5rem;
+  }
+
+  .table-container {
+    max-height: none;
+    margin: auto;
+    padding: 0 0 1rem;
+  }
+
+  tbody td {
+    text-align: left;
+    padding: 0 0 1rem 0rem;
+    font-size: 0.7rem;
+  }
+
+  thead td {
+    padding-bottom: 1rem;
+    font-size: 0.7rem;
+    text-align: left;
+  }
+
+  #result,
+  #user-input {
+    padding: 0;
+  }
+
+  p {
+    width: 40%;
+  }
+
+  .input-group {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
